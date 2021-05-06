@@ -23,8 +23,8 @@ Text cleaning tools usable in sklearn pipelines
     
    
                
-    text = ["my email address is : mail@outlook.com", 
-            "hello my email address is, mail2@gmail.com", 
+    text = ["&& my email address is : mail@outlook.com", 
+            "hello ## my email address is, mail2@gmail.com", 
             "my credit card number is 3221 1111 1111 1111"]
     
     # Fit the pipeline to data
