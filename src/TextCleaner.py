@@ -10,7 +10,6 @@ from nltk.stem import WordNetLemmatizer as WNL
 from nltk.corpus import wordnet
 from string import punctuation
 from sklearn.base import TransformerMixin
-import pandas as pd
 
 class TextCleaner():
 
