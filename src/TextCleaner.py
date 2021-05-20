@@ -21,7 +21,6 @@ class TextCleaner():
         """
         self.lang = lang
         self.punctuation = list(punctuation)
-        self.models = dict()
 
     def sentence_tokenize(self, text_list):
         """
