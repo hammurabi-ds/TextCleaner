@@ -195,15 +195,6 @@ class TextCleaner():
         else:
             return wordnet.NOUN
 
-
-"""
-Prepare functions to be used in sklearn pipelien
-
-The methods taking list of words, [word], will now take list of list of words:
-[ [ word ] ], so that they fit into a common pipeline procedure.
-"""
-
-
 class UnitTransformer():
     def __init__(self, preprocessor):
         self.preprocessor = preprocessor
