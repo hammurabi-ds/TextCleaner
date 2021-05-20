@@ -11,8 +11,6 @@ from nltk.corpus import wordnet
 from string import punctuation
 from sklearn.base import TransformerMixin
 import pandas as pd
-from polyglot.detect import Detector
-
 
 class TextCleaner():
 
