@@ -37,7 +37,7 @@ class TextCleaner():
         """
         return [word_tokenize(text, language=self.lang) for text in text_list]
 
-    def stem(self, word_list):
+    def stemmer(self, word_list):
         """
         stem words into root forms.
 
@@ -208,7 +208,7 @@ class Stemmer(UnitTransformer):
         """
         input: list of list of words
         """
-        return [self.preprocessor.stem(wl) for wl in word_list]
+        return [self.preprocessor.stemmer(wl) for wl in word_list]
 
 
 class WordTokenizer(UnitTransformer):
