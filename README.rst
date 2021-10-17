@@ -3,6 +3,9 @@ Text cleaning tools usable in sklearn pipelines
 
 
 ```python
+
+    from txtclnr.txtclnr import *
+    
     prep = TextCleaner("english")
     
     symbols = ['¤¤, ##, &&'']

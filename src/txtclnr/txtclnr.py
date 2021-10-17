@@ -1,5 +1,5 @@
 from nltk.corpus import stopwords
-from src import full_stopwords
+from txtclnr import full_stopwords
 from nltk import sent_tokenize, word_tokenize
 from nltk.stem import SnowballStemmer
 from polyglot.tag import POSTagger as PG_POSTagger
