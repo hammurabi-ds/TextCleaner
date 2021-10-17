@@ -1,5 +1,4 @@
 import pytest
-
 from txtclnr.txtclnr import *
 from sklearn.pipeline import Pipeline
 
@@ -9,7 +8,7 @@ __license__ = "MIT"
 
 
 def test_pipeline():
-    """API Tests"""
+    """Testing nlp cleaning pipeline"""
 
     prep = TextCleaner("english")
     symbols = ['##, &&']
@@ -32,9 +31,10 @@ def test_pipeline():
             "hello ## my email address is, mail2@gmail.com", 
             "my credit card number is 3221 1111 1111 1111"]
     clean_text = steps.fit_transform(text)
-    data=[' '.join(x) for x in clean_text]1
+    data=[' '.join(x) for x in clean_text]
 
     assert data[2].find("CREDIT CARD")!=-1
+    assert data[1].find("##")==-1
     assert data[0].find("is")==-1
     assert len(data)==3
 
